@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter Cleaner",
+  "version": "1.0",
+  "description": "\u5c4f\u853d\u63a8\u7279\u4e0a\u5305\u542b\u6307\u5b9a\u5173\u952e\u8bcd\u7684\u63a8\u6587",
+  "permissions": ["storage", "scripting"],
+  "host_permissions": ["*://twitter.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://twitter.com/*"],
+      "js": ["components/A/B/C"]
+    }
+  ]
+}
